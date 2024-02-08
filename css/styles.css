@@ -36,7 +36,15 @@ header .container {
 header .container .logo {
     width: 100px;
 }
-
+.menu:hover{
+    font-size: 20px;
+    color: white;
+    transition: 0.4s;
+}
+.menu {
+    /* Aquí aplicamos la misma duración de transición */
+    transition: 0.4s;
+}
 .boton {
     text-align: center;
     text-decoration: none;
@@ -45,6 +53,20 @@ header .container .logo {
 .seccion{
     padding-top: 80px;
     padding-bottom: 60px;
+}
+.cuadrado_perfecto{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+.cuadrado_perfecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top:0;
+    left: 0;
 }
 .container nav a {
     color: red;
@@ -57,6 +79,13 @@ header .container .logo {
     margin: 0 auto 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+.container-fluid{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
 }
 .row{
     display: flex;
@@ -103,13 +132,26 @@ header .container .logo {
 #inicio .bloque_inicio p {
     color: rgb(255, 255, 255);
 }
-
+.boton {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+}
 .boton_rojo {
     background-color: red;
     color: white;
     border-radius: 5px;
     opacity: 0.55;
 }
+.boton-blanco {
+    background-color: white;
+    font-weight: bold;
+    color: red;
+    border-radius: 5px;
+    border: 2px solid red;
+    box-shadow: 10px 10px 10px 0 rgba(67, 67, 67, 0.3);
+}
+
 
 .boton_rojo:hover {
     opacity: 0.95;
@@ -131,13 +173,39 @@ header .container .logo {
     box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
 }
 
-#servicios .bloque-servicio .bloque_img_servicio{
+/* #servicios .bloque-servicio .bloque_img_servicio{
     
-}
+} */
 #servicios .bloque-servicio .bloque_img_servicio img{
     width:  100%;
+}
+#servicios .bloque-servicio .bloque_img_servicio.cuadrado_perfecto{
+    padding-bottom: 56.25%;
 }
 #servicios .bloque-servicio .bloque_contenido_servicio{
     padding: 15px;
 }
-
+#servicios .bloque-servicio .bloque_contenido_servicio h3{
+    margin-top: 0;
+    font-size: 25px;
+    text-align: center;
+}
+#galeria h4{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+#galeria img{
+    filter: grayscale(0.7);
+}
+#galeria .cuadrado_perfecto:hover img{
+    filter: grayscale(0);
+}
+#galeria .cuadrado_perfecto:hover h4{
+    display: none;
+}
