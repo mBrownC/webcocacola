@@ -9,6 +9,7 @@ body {
 
 a {
     display: inline-block;
+    text-decoration: none;
 }
 
 p {
@@ -36,10 +37,50 @@ header .container {
 header .container .logo {
     width: 100px;
 }
+footer.seccion{
+    background-color: black;
+    color: white;
+    padding-bottom: 0;
+}
+footer .barra_foorter{
+    background-color: grey;
+    text-align: center;
+    padding: 20px 15px;
+}
+footer .logo_footer{
+    width: 100%;
+}
+footer p{
+    color: white;
+    margin-bottom: 20px;
+}
+footer ul{
+    padding-left: 0;
+    list-style: none;
+}
+footer ul li{
+    margin-bottom: 5px;
+}
+footer .redes{
+    display: flex;
+    justify-content: space-around;
+}
+footer i{
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+footer i:hover{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
 .menu:hover{
     font-size: 20px;
     color: white;
     transition: 0.4s;
+    box-shadow: 10px 10px 10px 0 rgba(255, 255, 255, 0.3);
 }
 .menu {
     /* Aquí aplicamos la misma duración de transición */
@@ -79,6 +120,7 @@ header .container .logo {
     margin: 0 auto 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    position: relative;
 }
 .container-fluid{
     width: 100%;
@@ -94,13 +136,24 @@ header .container .logo {
     margin-right: -15px;
 }
 .columna{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
+}
+.columna_25{
+    width: 25%;
+    padding-right: 20px;
 }
 .columna-33{
     width: 33.33%;
 }
-
+.columna-41{
+    width: 41%;
+}
+.empujar-58{
+    margin-left: 58%;
+}
+.empujar-0{
+    margin-left:0;
+}
 #inicio {
     position: relative;
 }
@@ -108,6 +161,7 @@ header .container .logo {
 #inicio img {
     width: 100%;
     opacity: 0.8;
+    filter: grayscale(0.9);
 }
 
 #inicio img:hover {
@@ -131,6 +185,8 @@ header .container .logo {
 
 #inicio .bloque_inicio p {
     color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-weight: bold;
 }
 .boton {
     text-align: center;
@@ -149,7 +205,16 @@ header .container .logo {
     color: red;
     border-radius: 5px;
     border: 2px solid red;
-    box-shadow: 10px 10px 10px 0 rgba(67, 67, 67, 0.3);
+    box-shadow: 5px 5px 5px 0 rgba(91, 91, 91, 0.3);
+}
+.boton-blanco:hover {
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid red;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+    transition-duration: .2s;
 }
 
 
@@ -158,7 +223,7 @@ header .container .logo {
     transition-duration: .2s;
 }
 #nosotros{
-    background-image: url(/img/latas.jpg);
+    background-image: url(../img/latas.jpg);
     background-size: cover;
 
 }
@@ -183,6 +248,7 @@ header .container .logo {
     padding-bottom: 56.25%;
 }
 #servicios .bloque-servicio .bloque_contenido_servicio{
+
     padding: 15px;
 }
 #servicios .bloque-servicio .bloque_contenido_servicio h3{
@@ -201,11 +267,61 @@ header .container .logo {
     width: 100%;
 }
 #galeria img{
+    border-radius: 10px;
     filter: grayscale(0.7);
+    box-shadow: 10px 10px 10px 0 rgba(83, 83, 83, 0.3);
 }
 #galeria .cuadrado_perfecto:hover img{
     filter: grayscale(0);
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
 }
 #galeria .cuadrado_perfecto:hover h4{
     display: none;
+}
+
+#contactenos{
+    position: relative;
+
+}
+#contactenos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0.9);
+}
+
+#contactenos form{
+    padding: 60px;
+    background-color:rgba(255, 0, 0, 0.8);
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+#contactenos form .form_block{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#contactenos form .form_block label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contactenos form .form_block .boton-blanco{
+    padding: 10px;
+}
+
+#contactenos form .form_block .form_control{
+    display: block;
+    height: 30px;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid black;
+}
+#contactenos form .form_block textarea{
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid black;
 }
