@@ -74,7 +74,8 @@ footer i:hover{
     color: rgb(255, 0, 0);
     font-size: 30px;
     transition: 0.3s;
-    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 30px rgb(255, 255, 255));
+    /* box-shadow: ; */
 }
 .menu:hover{
     font-size: 20px;
@@ -233,6 +234,7 @@ footer i:hover{
     font-size: 16px;
 }
 #servicios .bloque-servicio{
+    height: 550px;
     border: 1px solid grey;
     border-radius: 5px;
     box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
