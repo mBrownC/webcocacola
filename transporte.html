@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
         <meta charset="UTF-8">
-        <meta name="description"
-            content="Explora la historia de Coca-Cola®, sus productos y el sabor que marca momentos inolvidables. ¡Refresca tus momentos con nosotros!">
-        <meta name="keywords"
-            content="Coca-Cola, refrescos, bebidas, historia, sabor único, momentos refrescantes, productos icónicos">
-        <title>Transporte Coca Cola ®</title>
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slide</title>
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="https://kit.fontawesome.com/1ac22e0cde.js"
-            crossorigin="anonymous"></script>
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style-slide-peliculas.css">
+        <link rel="stylesheet" href="css/mq-slide-peliculas.css">
     </head>
-<body>
-    <h1>Transporte</h1>
-</body>
+    <body>
+
+        <section class="search container">
+            <div class="search-txt">
+                <i class="fa-brands fa-youtube"></i>
+                <h2>Peliculas</h2>
+            </div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </section>
+
+        <section class="movies container">
+            <h2>Nuevas</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/transporte/1.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/2.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/3.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/4.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/5.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/6.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/7.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/8.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/1.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/2.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/3.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/4.jpg" alt>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/transporte/5.jpg" alt>
+                    </div>
+                </div>
+            </div>
+            <!-- fin swiper -->
+        </section>
+
+        <section class="icons container">
+            <i class="fa-solid fa-home"></i>
+            <i class="fa-solid fa-fire-flame-curved"></i>
+            <i class="fa-solid fa-ticket"></i>
+            <i class="fa-solid fa-folder"></i>
+            <i class="fa-solid fa-video"></i>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script-slide-peliculas.js"></script>
+    </body>
 </html>

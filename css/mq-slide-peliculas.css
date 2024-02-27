@@ -1,0 +1,14 @@
+@media(max-width:991px){
+    body{
+        min-width: 0vh;
+    }
+    .search{
+        padding: 30px 30px 0 30px;
+    }
+    .movies{
+        padding: 30px;
+    }
+    .icons{
+        padding: 30px;
+    }
+}
